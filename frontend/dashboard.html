@@ -3,14 +3,73 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard</title>
+    <title>Minecraft Home</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <h1>Welcome to the Dashboard</h1>
+  <body class="dashboard">
+    <header class="topbar">
+      <span>MINECRAFT HOME</span>
+      <button class="logout-btn" onclick="logout()">Logout</button>
+    </header>
 
-    <p>You have successfully logged in.</p>
+    <section class="hero">
+      <h1>Welcome to Minecraft</h1>
+      <p>
+        A world made of blocks. Mine, build, and survive. Your only limit is
+        your imagination.
+      </p>
+    </section>
 
-    <button onclick="logout()">Logout</button>
+    <main>
+      <h2>Game Modes</h2>
+      <div class="grid">
+        <div class="block">
+          <h3>Survival</h3>
+          <p>Gather resources, craft tools, and stay alive through the night.</p>
+        </div>
+        <div class="block">
+          <h3>Creative</h3>
+          <p>Unlimited blocks and flight. Build anything you can imagine.</p>
+        </div>
+        <div class="block">
+          <h3>Adventure</h3>
+          <p>Play custom maps made by other players, with rules to follow.</p>
+        </div>
+      </div>
+
+      <h2>Mobs You Will Meet</h2>
+      <div class="grid">
+        <div class="block">
+          <h3>Creeper</h3>
+          <p>Silent and green. It hisses, then explodes. Listen carefully.</p>
+        </div>
+        <div class="block">
+          <h3>Zombie</h3>
+          <p>Wanders at night and burns in sunlight. Keep a sword handy.</p>
+        </div>
+        <div class="block">
+          <h3>Enderman</h3>
+          <p>Tall and calm until you look at it. Do not make eye contact.</p>
+        </div>
+        <div class="block">
+          <h3>Villager</h3>
+          <p>Friendly trader. Offer emeralds and get useful items back.</p>
+        </div>
+      </div>
+
+      <h2>Beginner Tips</h2>
+      <ul class="tips">
+        <li>Punch a tree to get wood on your first day.</li>
+        <li>Build a shelter before the first night.</li>
+        <li>Never dig straight down. You might land in lava.</li>
+        <li>Keep a bed nearby to set your spawn point.</li>
+        <li>Bring torches when you explore caves.</li>
+      </ul>
+    </main>
+
+    <footer class="footer">
+      A fan page. Minecraft is a trademark of Mojang Studios.
+    </footer>
 
     <script>
       function logout() {
